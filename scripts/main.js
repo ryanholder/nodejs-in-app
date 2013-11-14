@@ -1,7 +1,9 @@
 onload = function() {
-	var _ = require('underscore');
 
-	_.each([1, 2, 3], function (n) {
-  		console.log(n); //=> 1, 2, 3
+	var less = require('less');	
+
+	less.render('.class { width: (1 + 1) }', function (e, css) {
+	    console.log(css);
 	});
+
 };
