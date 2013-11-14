@@ -1,3 +1,19 @@
-body {
-  background: yellow;
+#less-editor {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top:0;
+    left:0;
+}
+#css-output {
+    position: absolute;
+    width: 500px;
+    height: 400px;
+    top:0;
+    left:500px;
+}
+
+#convert-button {
+    position: absolute;
+    top:450px;
 }

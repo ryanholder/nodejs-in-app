@@ -8,10 +8,18 @@
         <!-- endbuild -->
 
         <script type="text/javascript" src="scripts/bundle.js" charset="utf-8"></script>
+        
 
     </head>
+
     <body>
-        <h1>node-in-client</h1>
-        <input type="text" id="result">
+        <div id="less-editor">.class { width: (1 + 1) }</div>
+        <div id="css-output"></div>
+
+        <button class="btn" id="convert-button" title="Convert">Convert</button>
+
     </body>
+    
+    <script src="vendor/ace/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="scripts/ace.js" type="text/javascript" charset="utf-8"></script>
 </html>

@@ -2,8 +2,15 @@ onload = function() {
 
 	var less = require('less');	
 
-	less.render('.class { width: (1 + 1) }', function (e, css) {
-	    console.log(css);
-	});
+	var convertButton = document.querySelector('#convert-button');
+
+	convertButton.addEventListener('click', function(e) {
+
+		less.render(less_editor.getValue(), function (e, css) {
+		    console.log(css);
+		    css_output.setValue(css);
+		});
+
+  	});
 
 };
